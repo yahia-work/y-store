@@ -1,0 +1,21 @@
+
+
+
+.number-input{
+    border: 2px solid rgb(222, 222, 222);
+    border-radius: 5px;
+    width: 120px;
+    padding: 18px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plus, .minus{
+    padding: 5px;
+    border-radius: 50%;
+}  
+
+.plus:hover, .minus:hover{
+    background-color: rgb(237, 237, 237);
+}   
+

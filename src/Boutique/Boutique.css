@@ -1,0 +1,111 @@
+
+
+.Boutique{
+    padding: 5% 10%;
+    gap: 50px;
+}
+
+.configuration{
+    width:20%;
+    gap: 15px;
+    flex-direction: column;
+}
+
+
+.item-config{
+    padding: 10px 0px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(188, 188, 188);
+    align-items: center;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.up-item-config {
+    transition: transform 0.3s ease;
+}
+
+.up-item-config.rotated {
+    transform: rotate(-180deg);
+}
+
+
+.config {
+    overflow: hidden;
+    height: 0;
+    transition: height 0.3s ease;
+    font-size:14px;
+    color: rgb(84, 84, 84);
+    font-size: 15px;
+}
+
+.expanded {
+    height: auto;
+    transition: height 0.3s ease;
+}
+.categorie-config{
+    align-items: center;
+}
+
+/*  ----------------- models -------------------------*/
+
+.models{
+    width: 80%;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.header-models{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header-models .path{
+    color: rgb(102, 102, 102);
+    font-size: 14px;
+}
+.header-models .path .pointer{
+    transition: color 0.5s;
+}
+.header-models .path .pointer:hover{
+    color: rgb(42, 42, 42);
+}
+.filter{
+    display: none;
+}
+@media (max-width: 1300px) {
+    .Boutique{
+        padding: 5% 2%;
+        gap: 50px;
+    }
+}
+
+@media (max-width : 1100px){
+    .configuration{
+        width:20%;
+        gap: 15px;
+        flex-direction: column;
+        display: none;
+    }
+    .panier-configuration{
+        padding: 20px 5%;
+        width:90%;
+        gap: 15px;
+        flex-direction: column;
+    }
+    .select-filter{
+        display: none;
+    }
+
+    .models{
+        width: 100%;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .filter{
+        display: flex;
+        margin-top: 25px;
+        gap: 10px;
+        font-weight: bold;
+    }
+}

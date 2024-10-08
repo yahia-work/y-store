@@ -1,0 +1,221 @@
+
+
+.header{
+    padding: 8px;
+    padding-left: 12%;
+    padding-right: 12%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h3{
+    font-family: cursive;
+}
+.list-option{
+    gap: 30px;
+    font-family:"Jost,Arial,sans-serif";
+    font-size: 18px;
+}
+
+.list-option a {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1;
+    color: #111111;
+    position: relative;
+    transition: .3s; 
+    text-decoration: none;
+}
+
+.list-option a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px; 
+    background-color: #5e5e5e; 
+    left: 0;
+    bottom: -3px; 
+    transition: width 0.3s ease; 
+}
+
+.list-option a:hover {
+    color: #5e5e5e;
+    display: block;
+    scale: 1.1;
+}
+
+.list-option a:hover::after {
+    width: 100%; 
+}
+
+.shop-icon{
+    font-size: 20px; 
+}
+
+.menu-icon{
+    display: none;
+}
+
+.panier-shop {
+    position: fixed; 
+    top: 0;
+    right: -25%; 
+    width: 25%; 
+    height: 100%; 
+    background-color: white; 
+    transition: right 1s; 
+    z-index: 1000; 
+}
+.colse{
+    display: none;
+}
+.panier-shop.open {
+    right: 0px;
+}
+.exit-shop{
+    font-size: 30px;
+    transition: .2s;
+}
+.exit-shop:hover{
+    color: #737373;
+    scale: 1.1;
+}
+.header-panier-shop{
+    padding: 0px 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(215, 215, 215);
+}
+
+.retour { 
+    position: fixed;
+    z-index: 1000;
+    right: 10px;
+    bottom: 30px;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 1200px){
+    .panier-shop {
+        position: fixed; 
+        top: 0;
+        right: -40%; 
+        width: 40%; 
+        height: 100%; 
+        background-color: white; 
+        transition: right 1s; 
+        z-index: 1000; 
+    }
+}
+
+@media (max-width: 1000px) {
+    .header{
+        padding: 8px;
+        padding-left: 5%;
+        padding-right: 5%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .panier-shop {
+        position: fixed; 
+        top: 0;
+        right: -40%; 
+        width: 40%; 
+        height: 100%; 
+        background-color: white; 
+        transition: right 1s; 
+        z-index: 1000; 
+    }
+}
+
+@media (max-width: 750px){
+    .header{
+        padding: 8px;
+        padding-left: 5%;
+        padding-right: 5%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .list-option{
+        display: none;
+    }
+    .menu-icon{
+        display:block;
+        font-size: 25px; 
+    }
+    .header-2{
+        position: absolute; 
+        top: 0;
+        left: 0;
+        width: 90%;
+        z-index: 1000;
+        margin: 4% 5%;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+    }
+    .exit{
+        font-size: 30px;
+        transition:.2s;
+    }
+    .exit:hover{
+        scale: 1.15;
+    }
+    .list-option-2{
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        
+        font-family:"Jost,Arial,sans-serif";
+        font-size: 18px;
+    }
+    .list-option-2 a {
+        color: #111111;
+        position: relative;
+        transition: .3s; 
+        text-decoration: none;
+    }
+    
+    .list-option-2 a::after {
+        content: '';
+        position: absolute;
+        width: 0px;
+        height: 1.5px; 
+        background-color: #5e5e5e; 
+        left: 0;
+        bottom: -3px; 
+        transition: width 0.3s ease; 
+    }
+    
+    .list-option-2 a:hover {
+        color: #5e5e5e;
+        display: block;
+        scale: 1.1;
+    }
+    
+    .list-option-2 a:hover::after {
+        width: 100%; 
+    }
+    .header-21{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 30px;
+    }
+    .panier-shop {
+        position: fixed; 
+        top: 0;
+        right: -80%; 
+        width: 60%; 
+        height: 100%; 
+        background-color: white; 
+        transition: right 1s; 
+        z-index: 1000; 
+    }
+}
+

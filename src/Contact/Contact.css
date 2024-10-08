@@ -1,0 +1,47 @@
+
+.contact{
+    margin: 5% 15%;
+    gap: 100px;
+}
+
+
+.contactez-nous-infos{
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contactez-nous{
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.envoyer-button{
+    width: 200px;
+    height: 45px;
+}
+
+@media (max-width: 1100px){
+    .contact{
+        margin: 5% 5%;
+        gap: 100px;
+    }
+}
+@media (max-width: 900px){
+    .contact{
+        margin: 5% 2%;
+        gap: 100px;
+    }
+}
+@media (max-width: 800px){
+    .contact{
+        margin: 5% 5%;
+        gap: 50px;
+        flex-flow: column-reverse;
+    }
+    .envoyer-button{
+        width: 180px;
+        height: 45px;
+    }
+}
