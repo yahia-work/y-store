@@ -1,6 +1,6 @@
 import "./Product.css";
 import React, { useEffect, useState,useContext } from 'react';
-import { useParams, useLocation } from 'react-router-dom';
+import {  useLocation } from 'react-router-dom';
 import QuantityInput from "../components/NumberInput";
 import Button from '@mui/material/Button';
 import { PanierContext } from '../Context/PanierContext';
@@ -145,6 +145,7 @@ function Product() {
                             ["36", "38", "40", "42"].map((item, index) => {
                                 return (
                                     <TailleItem 
+                                        key={index}
                                         taille={item} 
                                         index={index}
                                         tailleSelected={tailleSelected}

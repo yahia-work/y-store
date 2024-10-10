@@ -87,7 +87,7 @@ function Header(){
         <div className="header flex">
             <MdMenu className="menu-icon pointer" onClick={handelMenuopen}/>
             <h3 className="pointer">
-                Y_STORE35 
+                Y_STORE3
             </h3>
             {
                 menuStatus ? 
